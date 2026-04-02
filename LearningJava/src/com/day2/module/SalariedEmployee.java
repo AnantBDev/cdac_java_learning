@@ -1,6 +1,8 @@
 package com.day2.module;
 
-public class SalariedEmployee extends Employee{
+import com.day3.module.TaxPayer;
+
+public class SalariedEmployee extends Employee implements TaxPayer {
     protected double basic;
 
     public SalariedEmployee(int empid,String name,double basic){
@@ -39,6 +41,11 @@ public class SalariedEmployee extends Employee{
         SalariedEmployee s1=new SalariedEmployee(1,"anant",50000);
         SalariedEmployee s2=new SalariedEmployee(2,"vachan",50000);
 
+    }
+
+    @Override
+    public double calculateTax() {
+        return calculateGross()*0.2;
     }
 }
 

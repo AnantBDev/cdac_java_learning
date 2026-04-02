@@ -1,9 +1,25 @@
 package com.day1.models;
 
-public class Date {
+public class Date implements Cloneable{
     private int day;
     private String month;
     private int year;
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
 
     public Date(){
         day=1;
