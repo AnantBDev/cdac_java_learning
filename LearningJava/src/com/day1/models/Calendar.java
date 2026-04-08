@@ -8,6 +8,9 @@ public class Calendar {
         Date d2=d1;
         d1.displayDate();
         d2.displayDate();
+        d1.setDate(11,"Mar",2000);
+        System.out.println("__________________________");
+        d2.displayDate();
         Date d3=new Date(10, "Jan", 2005);
 
         //d3.setDate(10,"Jan", 2005);
